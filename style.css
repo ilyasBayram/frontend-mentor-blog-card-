@@ -16,7 +16,6 @@
 body {
   background-color: var(--yellow);
   font-family: "Figtree", sans-serif;
-  font-size: 16px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -24,13 +23,13 @@ body {
 }
 
 .container {
-  max-width: 380px;
+  max-width: 384px;
   background-color: var(--white);
   border: 1px solid var(--black);
   box-shadow: 7px 7px var(--black);
   border-radius: 15px;
-  padding: 23px;
-  margin: 0 30px;
+  padding: 1.2rem;
+  margin: 0 4rem;
 }
 
 .container:hover {
@@ -39,9 +38,9 @@ body {
 
 .card > :nth-child(2) {
   display: inline-block;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  border-radius: 0.4rem;
   color: var(--black);
   padding: 5px 10px;
   font-weight: 700;
@@ -56,12 +55,11 @@ body {
 }
 
 .card h2 {
-  margin: 18px 0;
+  margin: 1.2rem 0;
 }
 .card h2 a {
   text-decoration: none;
   color: var(--black);
-  margin: 18px 0;
 }
 
 .card h2 a:hover {
@@ -78,17 +76,23 @@ body {
   align-items: center;
   justify-content: start;
   gap: 10px;
-  margin: 24px 24px 0 0;
+  margin: 1.6rem 1.6rem 0 0;
 }
 
 .author img {
-  width: 30px;
-  height: 30px;
+  width: 2rem;
 }
 
 .author p {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 0.4rem;
   color: var(--black);
   font-weight: 700;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin: 2rem auto;
+    width: 90%;
+  }
 }
